@@ -12,6 +12,7 @@ $hot = DB::table('products')
 ->where('products.status',1)->where('hot_deal',1)->orderBy('id','desc')->limit(3)
 ->get();
 @endphp
+<!-- Best Sellers -->
 <div class="best_seller">
     <div class="container">
         <div class="row">
@@ -24,33 +25,294 @@ $hot = DB::table('products')
                                 <li>Audio & video</li>
                                 <li>Laptop & Computers</li>
                             </ul>
-                        <div class="tabs_line"><span></span></div>    
+                        <div class="tabs_line"><span></span> </div>    
                     </div>
-                        <div class="bestsellers_panel panel active">
-                            <!--Best Seller Slider -->
-                            <div class="bestsellers_slider slider">
-                                <!-- Best Sellers Item -->
-                                <div class="bestsellers_item discount">
-                                    <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
-                                        <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
-                                        <div class="bestsellers_content">
-                                            <div class="bestsellers_category"><a href="#">Hoodie</a></div>
-                                            <div class="bestsellers_name"><a href="product.html">Addias</a></div>
-                                            <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
-                                        </div>
+                    <div class="bestsellers_panel panel active">
+                        <!--Best Seller Slider -->
+                        <div class="bestsellers_slider slider">
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
                                     </div>
-
                                 </div>
-
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
                             </div>
-                        </div>    
-
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bestsellers_panel panel">
+                        <!--Best Seller Slider -->
+                        <div class="bestsellers_slider slider">
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                            <!-- Best Sellers Item -->
+                            <div class="bestsellers_item discount">
+                                <div class="bestsellers_item_container d-flex flex-row align-item-center justify-content-start">
+                                    <div class="bestsellers_image"><img src="{{ asset('public/frontend/images/best_1.png')}}" alt=""></div>
+                                    <div class="bestsellers_content">
+                                        <div class="bestsellers_category"><a href="#">Hoodie</a></div>
+                                        <div class="bestsellers_name"><a href="product.html">Addias</a></div>
+                                        <div class="rating_r rating_r_4 bestsellers_rating"><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="bestsellers_price discount">$225 <span>$300</span></div>
+                                    </div>
+                                </div>
+                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
+                                <ul class="bestsellers_marks">
+                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
+                                    <li class="bestsellers_mark bestsellers_new">new</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </div>
+
+@endsection
